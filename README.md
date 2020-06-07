@@ -1,7 +1,36 @@
-# NLW 1.0
+<h1 align="center">
+    <img alt="Ecoleta" title="#mockups" src="https://raw.githubusercontent.com/matheuspegoraro/nlw-01/master/logo-transparent.png" width="250px" />
+</h1>
 
-## Sobre a aplicação
-- A Ecoleta foi a aplicação escolhida pela @Rocketseat para representar a primeira edição da NLW!
+<h4 align="center">
+  🚀 NLW 1.0
+</h4>
+
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="Frontend" src="https://raw.githubusercontent.com/matheuspegoraro/nlw-01/master/mockup-transparent.png" width="100%">
+</p>
+
+## :rocket: Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
+
+## 💻 Projeto
+
+O App Ecoleta foi a aplicação escolhida pela @Rocketseat para representar a primeira edição da NLW. Se trata de uma aplicação mobile e web que ajuda pessoas a encontrarem pontos de coleta de forma eficiente.
+
+## Relatos do que foi realizado durante o projeto
 
 ### Dia 01 
 - Entendemos os conceitos básicos sobre uma API Rest utilizando o node e express;
