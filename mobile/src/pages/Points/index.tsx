@@ -141,26 +141,28 @@ const Points = () => {
           ) }
         </View>  
       </View>
-      <View style={styles.itemsContainer}>
-        <ScrollView 
-          horizontal 
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ paddingHorizontal: 32 }}
-        >
-          {items.map(item => (
-            <TouchableOpacity 
-              key={String(item.id)} 
-              style={[
-                styles.item, 
-                selectedItems.includes(item.id) ? styles.selectedItem : {}
-              ]} 
-              onPress={() => handleSelectItem(item.id)}
-              activeOpacity={0.6}>
-              <SvgUri width={42} height={42} uri={item.image_url} />
-              <Text style={styles.itemTitle}>{item.title}</Text>
-            </TouchableOpacity>
-          ))}
-        </ScrollView>
+      <View style={styles.footer}>
+        <View style={styles.itemsContainer}>
+          <ScrollView 
+            horizontal 
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ paddingHorizontal: 32 }}
+          >
+            {items.map(item => (
+              <TouchableOpacity 
+                key={String(item.id)} 
+                style={[
+                  styles.item, 
+                  selectedItems.includes(item.id) ? styles.selectedItem : {}
+                ]} 
+                onPress={() => handleSelectItem(item.id)}
+                activeOpacity={0.6}>
+                <SvgUri width={42} height={42} uri={item.image_url} />
+                <Text style={styles.itemTitle}>{item.title}</Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        </View>
       </View>
     </>
   );
@@ -173,16 +175,22 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 32,
     paddingTop: 20 + Constants.statusBarHeight,
+    backgroundColor: '#1a1a1a'
+  },
+  
+  footer: {
+    backgroundColor: '#1a1a1a'
   },
 
   title: {
     fontSize: 20,
     fontFamily: 'Ubuntu_700Bold',
     marginTop: 24,
+    color: '#fff',
   },
 
   description: {
-    color: '#6C6C80',
+    color: '#fff',
     fontSize: 16,
     marginTop: 4,
     fontFamily: 'Roboto_400Regular',
@@ -235,6 +243,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 16,
     marginBottom: 32,
+    backgroundColor: '#1a1a1a'
   },
 
   item: {

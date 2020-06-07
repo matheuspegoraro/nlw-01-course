@@ -59,7 +59,7 @@ const Detail = () => {
   if (!data.serializedPoint) return null;
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#1a1a1a' }}>
       <View style={styles.container}>
         <TouchableOpacity onPress={ handleNavigateBack }>
           <Icon name="arrow-left" size={20} color="#34cb79" />
@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 32,
     paddingTop: 20 + Constants.statusBarHeight,
+    backgroundColor: '#1a1a1a'
   },
 
   pointImage: {
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
   },
 
   pointName: {
-    color: '#322153',
+    color: '#fff',
     fontSize: 28,
     fontFamily: 'Ubuntu_700Bold',
     marginTop: 24,
@@ -122,15 +123,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     marginTop: 8,
-    color: '#6C6C80'
+    color: '#fff'
   },
 
   address: {
     marginTop: 32,
+    color: '#fff',
   },
   
   addressTitle: {
-    color: '#322153',
+    color: '#fff',
     fontFamily: 'Roboto_500Medium',
     fontSize: 16,
   },
@@ -139,12 +141,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto_400Regular',
     lineHeight: 24,
     marginTop: 8,
-    color: '#6C6C80'
+    color: '#fff'
   },
 
   footer: {
     borderTopWidth: StyleSheet.hairlineWidth,
-    borderColor: '#999',
+    backgroundColor: '#1a1a1a',
     paddingVertical: 20,
     paddingHorizontal: 32,
     flexDirection: 'row',

@@ -122,6 +122,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
+    backgroundColor: '#1a1a1a'
   },
 
   main: {
@@ -130,7 +131,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: '#322153',
+    color: '#ffffff',
     fontSize: 32,
     fontFamily: 'Ubuntu_700Bold',
     maxWidth: 260,
@@ -138,7 +139,7 @@ const styles = StyleSheet.create({
   },
 
   description: {
-    color: '#6C6C80',
+    color: '#ffffff',
     fontSize: 16,
     marginTop: 16,
     fontFamily: 'Roboto_400Regular',
